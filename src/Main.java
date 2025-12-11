@@ -134,15 +134,15 @@ public class Main {
         int three = input.nextInt();
         if (one > two && one > three)
         {
-            System.out.println("Самое большое число - первое" + one);
+            System.out.println("Самое большое число - первое " + one);
         }
         if (two > one && two > three)
         {
-            System.out.println("Самое большое число - второе" + two);
+            System.out.println("Самое большое число - второе " + two);
         }
         if (three > one && three > two)
         {
-            System.out.println("Самое большое число - третье" + three);
+            System.out.println("Самое большое число - третье " + three);
         }
         else
         {
@@ -163,5 +163,6 @@ public class Main {
                 System.out.println("Второе и третье числа равны и наибольшие: " + two);
             }
         }
+        input.close();
     }
 }
