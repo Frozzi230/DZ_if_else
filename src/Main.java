@@ -86,10 +86,10 @@ public class Main {
         System.out.println();
 
         System.out.println("Задача №6");
-        int all = 102;
+        byte all = 102;
         System.out.print("Введите количество свободных сидячих мест в вагоне: ");
         int sidFree = input.nextInt();
-        int sid = 60;
+        byte sid = 60;
         while (sidFree > sid || sidFree < 0)
         {
             System.out.print("Число должно быть в диапазоне от 0 (включительно) до " + sid +" (включительно). Введите снова: ");
