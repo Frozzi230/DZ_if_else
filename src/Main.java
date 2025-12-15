@@ -87,41 +87,59 @@ public class Main {
 
         System.out.println("Задача №6");
         byte all = 102;
-        System.out.print("Введите количество свободных сидячих мест в вагоне: ");
-        int sidFree = input.nextInt();
-        byte sid = 60;
-        while (sidFree > sid || sidFree < 0)
+        byte pass = 36;
+        byte sit = 60;
+        int stand = all - sit;
+        if (pass < sit)
         {
-            System.out.print("Число должно быть в диапазоне от 0 (включительно) до " + sid +" (включительно). Введите снова: ");
-            sidFree = input.nextInt();
-        }
-        System.out.print("Введите количество свободных стоячих мест в вагоне: ");
-        int standFree = input.nextInt();
-        int stand = all - sid;
-        while (standFree > stand || standFree < 0)
-        {
-            System.out.print("Число должно быть в диапазоне от 0 (включительно) до " + stand + " (включительно). Введите снова: ");
-            standFree = input.nextInt();
-        }
-        if (sidFree == 0 && standFree == 0)
-        {
-            System.out.println("В вагоне нет свободных мест");
-        }
-        if (sidFree > 0 && standFree == 0)
-        {
-            System.out.println("В вагоне есть сидячие места и нет стоячих");
-        }
-        if (standFree > 0 && sidFree == 0)
-        {
-            System.out.println("В вагоне есть стоячие места и нет сидячих");
+            System.out.println("Есть свободные сидячие места");
         }
         else
         {
-            if (sidFree > 0 && standFree > 0)
+            if (pass < stand)
             {
-                System.out.println("В вагоне есть сидячие и стоячие места");
+                System.out.println("Есть свободные стоячие места");
+            }
+            else
+            {
+                System.out.println("Своюодных мест нет");
             }
         }
+//        System.out.print("Введите количество свободных сидячих мест в вагоне: ");
+//        int sidFree = input.nextInt();
+//        byte sid = 60;
+//        while (sidFree > sid || sidFree < 0)
+//        {
+//            System.out.print("Число должно быть в диапазоне от 0 (включительно) до " + sid +" (включительно). Введите снова: ");
+//            sidFree = input.nextInt();
+//        }
+//        System.out.print("Введите количество свободных стоячих мест в вагоне: ");
+//        int standFree = input.nextInt();
+//        int stand = all - sid;
+//        while (standFree > stand || standFree < 0)
+//        {
+//            System.out.print("Число должно быть в диапазоне от 0 (включительно) до " + stand + " (включительно). Введите снова: ");
+//            standFree = input.nextInt();
+//        }
+//        if (sidFree == 0 && standFree == 0)
+//        {
+//            System.out.println("В вагоне нет свободных мест");
+//        }
+//        if (sidFree > 0 && standFree == 0)
+//        {
+//            System.out.println("В вагоне есть сидячие места и нет стоячих");
+//        }
+//        if (standFree > 0 && sidFree == 0)
+//        {
+//            System.out.println("В вагоне есть стоячие места и нет сидячих");
+//        }
+//        else
+//        {
+//            if (sidFree > 0 && standFree > 0)
+//            {
+//                System.out.println("В вагоне есть сидячие и стоячие места");
+//            }
+//        }
 
         System.out.println();
 
