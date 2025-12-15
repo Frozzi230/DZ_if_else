@@ -94,17 +94,15 @@ public class Main {
         {
             System.out.println("Есть свободные сидячие места");
         }
+        else if (pass < stand)
+        {
+            System.out.println("Есть свободные стоячие места");
+        }
         else
         {
-            if (pass < stand)
-            {
-                System.out.println("Есть свободные стоячие места");
-            }
-            else
-            {
-                System.out.println("Своюодных мест нет");
-            }
+            System.out.println("Своюодных мест нет");
         }
+    }
 //        System.out.print("Введите количество свободных сидячих мест в вагоне: ");
 //        int sidFree = input.nextInt();
 //        byte sid = 60;
