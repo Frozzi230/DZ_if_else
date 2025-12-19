@@ -89,20 +89,32 @@ public class Main {
         byte all = 102;
         byte pass = 36;
         byte sit = 60;
-        int stand = all - sit;
-        if (pass < sit)
+        if (pass <= sit)
         {
             System.out.println("Есть свободные сидячие места");
         }
-        else if (pass < stand)
+        else if (pass > sit && pass <= all)
         {
-            System.out.println("Есть свободные стоячие места");
+            System.out.println("В вагоне есть стоячие места");
         }
         else
         {
-            System.out.println("Своюодных мест нет");
+            System.out.println("Вагон полон");
         }
-    }
+//        int stand = all - sit;
+//        if (pass < sit)
+//        {
+//            System.out.println("Есть свободные сидячие места");
+//        }
+//        else if (pass < stand)
+//        {
+//            System.out.println("Есть свободные стоячие места");
+//        }
+//        else
+//        {
+//            System.out.println("Своюодных мест нет");
+//        }
+
 //        System.out.print("Введите количество свободных сидячих мест в вагоне: ");
 //        int sidFree = input.nextInt();
 //        byte sid = 60;
