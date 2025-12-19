@@ -89,7 +89,18 @@ public class Main {
         byte all = 102;
         byte pass = 36;
         byte sit = 60;
-
+        if (pass <= sit)
+        {
+            System.out.println("Есть свободные сидячие места");
+        }
+        else if (pass > sit && pass <= all)
+        {
+            System.out.println("В вагоне есть стоячие места");
+        }
+        else
+        {
+            System.out.println("Вагон полон");
+        }
 //        int stand = all - sit;
 //        if (pass < sit)
 //        {
